@@ -23,12 +23,12 @@ class Artist
   def self.find_or_create_by_name(name)
     @@all.each do |artist|
       if artist.name == name
-        artist
+        existing_artist = artist
       else
         name = self.new(name)
       end
     end
-    1
+
   end
 
 end
