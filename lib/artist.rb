@@ -28,7 +28,7 @@ class Artist
         name = self.new(name)
       end
     end
-
+    existing_artist
   end
 
 end
