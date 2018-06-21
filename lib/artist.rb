@@ -27,7 +27,7 @@ class Artist
         existing_artist = artist
       end
     end
-    existing_artist
+    existing_artist = self.new(name)
   end
 
 end
