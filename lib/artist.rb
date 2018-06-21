@@ -22,6 +22,7 @@ class Artist
 
   def print_songs
     self.songs
+    binding.pry
   end
 
 
