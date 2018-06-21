@@ -24,6 +24,8 @@ class Artist
     if self.name == nil
       binding.pry
       name = self.new(name)
+    else
+      name = self.name
     end
   end
 
