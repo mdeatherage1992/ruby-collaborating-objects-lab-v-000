@@ -20,12 +20,14 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-      if self.name != name
-        name = self.new
+    if self.name == name
+      self.name
     else
-      name = self
+      name = self.new
     end
   end
+
+
 
   def print_songs
     Song.artist
