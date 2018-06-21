@@ -20,7 +20,7 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-      if self != name
+      if self.name != name
         name = self.new
     else
       name = self
