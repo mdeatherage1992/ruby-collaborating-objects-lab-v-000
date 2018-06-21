@@ -28,6 +28,7 @@ class Artist
         name = self.new(name)
       end
     end
+    1
   end
 
 end
