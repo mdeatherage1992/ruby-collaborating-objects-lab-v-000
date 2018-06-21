@@ -20,6 +20,15 @@ class Artist
     @@all
   end
 
+  def print_songs
+    list = ''
+    @@all.each do |artist|
+      list += artist.song
+    end
+  end
+      
+    end
+
   def self.find_or_create_by_name(name)
     existing_artist = ''
     @@all.each do |artist|
