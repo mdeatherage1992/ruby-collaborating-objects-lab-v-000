@@ -26,7 +26,6 @@ class Artist
       self.name = name
     end
   end
-end
 
 
 
