@@ -7,13 +7,13 @@ class Artist
   end
 
   def songs
-    @songs
+    @songs << Song.new
   end
 
   def save
     @@all << @name
   end
-  
+
 
 
 end
