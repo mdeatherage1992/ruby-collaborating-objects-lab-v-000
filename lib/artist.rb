@@ -7,11 +7,11 @@ class Artist
   end
 
   def songs
-    @songs << Song.new
+    Song.all.select {|song| song.artist == self}
   end
 
   def save
-    @@all << @name
+    
   end
 
 
