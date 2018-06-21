@@ -18,7 +18,6 @@ class Song
     song
   end
 
-new_instance = Song.new_by_filename(file_name)
 
 
 
