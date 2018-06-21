@@ -29,8 +29,6 @@ class Artist
   end
 end
 
-    end
-
   def self.find_or_create_by_name(name)
     existing_artist = ''
     @@all.each do |artist|
