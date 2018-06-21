@@ -15,6 +15,9 @@ class Artist
     @@all
   end
 
+  def save
+    @@all << name
+
 
 
 
