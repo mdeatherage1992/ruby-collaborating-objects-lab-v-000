@@ -23,7 +23,7 @@ class Artist
   def print_songs
     list = ''
     @@all.each do |artist|
-      list += artist.song
+      list += artist.songs
     end
   list
 end
