@@ -28,7 +28,7 @@ class Artist
   end
 
   def print_songs
-    @songs
+    artist.songs
   end
 
 
