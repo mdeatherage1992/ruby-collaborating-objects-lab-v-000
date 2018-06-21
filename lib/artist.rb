@@ -1,20 +1,18 @@
-require "pry"
 class Artist
   @@all = []
-  attr_accessor :name
+  attr_accessor :name, :songs
 
   def initialize(name)
     @name = name
-    @songs = songs
+    @songs = []
   end
 
   def self.all
     @@all
   end
 
-  def songs
-    Song.find_by_artist(self)
-    @songs
+  def add_song(song)
+    @songs << song
   end
 
   def self.find_or_create_by_name(name)
