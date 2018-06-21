@@ -25,7 +25,6 @@ class Artist
     @@all.each do |artist|
       list += artist.song
     end
-  end
   list
 end
 
