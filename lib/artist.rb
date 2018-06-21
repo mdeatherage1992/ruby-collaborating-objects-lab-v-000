@@ -20,8 +20,12 @@ class Artist
     @@all
   end
 
+  def songs
+    @songs
+  end
+
   def print_songs
-    
+
   end
 
 
