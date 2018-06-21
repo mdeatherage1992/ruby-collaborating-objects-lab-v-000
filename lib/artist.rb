@@ -12,7 +12,7 @@ class Artist
   end
 
   def all
-    @@all << @name
+    @@all
   end
 
 
