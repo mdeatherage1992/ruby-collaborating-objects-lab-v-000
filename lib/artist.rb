@@ -30,5 +30,6 @@ class Artist
     if existing_artist == ''
     existing_artist = self.new(name)
   end
+end
 
 end
