@@ -20,12 +20,11 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if (self.nil?)
-      self.artist = self.new(name)
-    else
-      self.artist.name = name
+      if (self.nil?)
+      artist = self.new(name)
+      song.title = filename.split(" - ")[1]
+      song
     end
-  end
 
 
 
