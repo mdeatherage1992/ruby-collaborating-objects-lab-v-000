@@ -23,7 +23,7 @@ class Artist
       if self.name == nil
       name = self.new
     else
-      self.name = self
+      name = self
     end
   end
 
