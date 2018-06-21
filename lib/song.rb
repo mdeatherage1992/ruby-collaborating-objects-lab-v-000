@@ -13,12 +13,22 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    song = self.new
-    song.title = filename
+    song = self.new(filename)
     song
   end
 
-
+  def self.find_or_create_by_name(name)
+    existing_artist = ''
+    @@all.each do |artist|
+      if artist.name == name
+        existing_artist = artist
+      end
+    end
+    if existing_artist == ''
+      existing_artist = self.new(name)
+    end
+    existing_artist
+  end
 
 
 end
