@@ -25,8 +25,9 @@ class Artist
     @@all.each do |artist|
       list += artist.song
     end
+    list
   end
-      
+
     end
 
   def self.find_or_create_by_name(name)
