@@ -25,6 +25,8 @@ class Artist
     else
       self.name = name
     end
+  end
+end
 
 
 
