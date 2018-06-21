@@ -25,8 +25,6 @@ class Artist
     @@all.each do |artist|
       if artist.name == name
         existing_artist = artist
-      else
-        name = self.new(name)
       end
     end
     existing_artist
