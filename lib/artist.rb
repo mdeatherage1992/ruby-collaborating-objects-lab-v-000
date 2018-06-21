@@ -13,6 +13,7 @@ class Artist
 
   def save
     @@all << @name
+  end
 
 
 
