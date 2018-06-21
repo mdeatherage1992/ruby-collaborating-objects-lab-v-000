@@ -20,7 +20,10 @@ class Artist
     @@all
   end
 
-
+  def songs
+     Song.find_by_artist(self)
+   end
+   
   def print_songs
     songs.each {|song| puts song.name}
   end
