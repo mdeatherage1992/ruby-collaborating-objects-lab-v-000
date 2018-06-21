@@ -25,7 +25,7 @@ class Artist
       binding.pry
       self.new(name)
     else
-      name = self.name
+    self.name
     end
   end
 
