@@ -17,18 +17,6 @@ class Song
     song
   end
 
-  def self.find_or_create_by_name(name)
-    existing_artist = ''
-    @@all.each do |artist|
-      if artist.name == name
-        existing_artist = artist
-      end
-    end
-    if existing_artist == ''
-      existing_artist = self.new(name)
-    end
-    existing_artist
-  end
 
 
 end
